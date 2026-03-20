@@ -37,6 +37,12 @@ function printMoviesLine(movies) {
     high: Math.max(...year) + 1,
     scaleMinSpace: 20
   },
+  axisX: {
+    labelOffset: {
+      x: -50,
+      y: -5
+    },
+  },
   height: 250,
   width: '70%'
 });
@@ -73,11 +79,11 @@ function printCharacters(characters) {
   const options = {
     high: 6,
     low: 0,
-    horizontalBars: false,
-    axisY: {
+    horizontalBars: true,
+    axisX: {
       onlyInteger: true,
     },
-    height: 1000
+    height: 2800
   };
 
   
